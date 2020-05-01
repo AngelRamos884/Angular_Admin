@@ -1,0 +1,15 @@
+
+<h3>{{leyend}}</h3>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-primary" type="button" (click)="changaValue(-5)" >
+            <i class="fas fa-minus"></i>
+        </button>
+    </div>
+    <input #txtProgress type="number" class="form-control" name="percent" [(ngModel)]="percent" (ngModelChange)="onChange($event)" min="1" maxlength="100">
+    <div class="input-group-append">
+        <button class="btn btn-outline-primary" type="button"(click)="changaValue(+5)" >
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+</div>
