@@ -16,8 +16,6 @@ export class IncrementComponent implements OnInit {
   @Output() changeVal:EventEmitter<number> = new EventEmitter();
   
   constructor() { 
-    console.log(this.leyend)
-    console.log(this.percent)
   }
 
   ngOnInit(): void {
