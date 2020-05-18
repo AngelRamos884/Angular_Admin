@@ -17,6 +17,8 @@ import { ChartsModule } from 'ng2-charts';
 //Components
 import { IncrementComponent } from '../components/increment/increment.component';
 import { GraphicDonutComponent } from '../components/graphic-donut/graphic-donut.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations:[
@@ -25,7 +27,9 @@ import { GraphicDonutComponent } from '../components/graphic-donut/graphic-donut
         ProgressComponent,
         IncrementComponent,
         GraphicComponent,
-        GraphicDonutComponent
+        GraphicDonutComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports:[
         PagesComponent,

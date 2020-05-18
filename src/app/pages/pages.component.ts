@@ -13,11 +13,15 @@ export class PagesComponent implements OnInit {
   constructor() {  }
 
   ngOnInit(): void {
+
   }
 
   ngAfterViewInit() {
     $('[data-widget="treeview"]').each(function() {
         AdminLte.Treeview._jQueryInterface.call($(this), 'init');
     });
+    $('[data-widget="pushmenu"]').each(function() {
+      AdminLte.PushMenu._jQueryInterface.call($(this), 'init');
+    })
   }
 }
